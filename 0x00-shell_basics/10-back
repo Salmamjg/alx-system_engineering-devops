@@ -1,3 +1,15 @@
 #!/bin/bash
+
+# Get the current directory
+current_dir=$(pwd)
+
+# Move to the previous directory
 cd -
+
+# Print the new current directory
+echo "Moved back to: $(pwd)"
+
+# Return to the original directory
+cd "$current_dir"
+
 
