@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays,the content of the current directory
+
+for file in *; do
+  if [[ $file != .* ]]; then
+    name_part=$(echo "$file" | awk -F '-' '{print $2}')
+    echo "$name_part"
+  fi
+done
