@@ -8,7 +8,6 @@ if [ -e "$file_path" ]; then
 
     if [ -s "$file_path" ]; then
         echo "school file is not empty"
-
         if [ -f "$file_path" ]; then
             echo "school is a regular file"
         fi
