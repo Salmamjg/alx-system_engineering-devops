@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# displays numbers from 1 to 20.
 
 count=1
 
