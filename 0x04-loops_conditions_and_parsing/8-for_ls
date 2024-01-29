@@ -3,7 +3,7 @@
 
 for file in *; do
   if [[ $file != .* ]]; then
-    name_part=$(echo "$file" | awk -F '-' '{print $2}')
+    name_part="${file#*-}"
     echo "$name_part"
   fi
 done
