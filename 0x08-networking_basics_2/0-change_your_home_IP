@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash script that configures an Ubuntu server with the below requirements.
+ip_addresses=$(ifconfig | grep -oE "inet (addr:)?([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)" | awk '{print $2}' | grep -v '127.0.0.1')
+
+echo "$ip_addresses"
